@@ -1,0 +1,35 @@
+{
+  "name": "wsabi-client-bacon",
+  "version": "0.1.0",
+  "description": "BaconJS powered lightweight client for the hapi websocket layer, wsabi.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ProbablePrime",
+  "homepage": "https://github.com/ProbablePrime/wsabi-client-bacon",
+  "bugs": {
+    "url": "https://github.com/ProbablePrime/wsabi-client-bacon/issues"
+  },
+  "keywords":[
+    "hapi",
+    "websocket",
+    "wsabi",
+    "bacon"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ProbablePrime/wsabi-client-bacon.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "baconjs": "^0.7.83",
+    "bluebird": "^3.1.1",
+    "ws": "^1.0.1"
+  },
+  "devDependencies": {
+    "socket.io": "^1.4.4",
+    "tape": "^4.4.0",
+    "tapes": "^3.0.0"
+  }
+}
