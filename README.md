@@ -7,7 +7,7 @@ Mostly a matter of preference. I find BaconJs' documentation easier to understan
 Wasabi and bacon also go together well [aparently](https://duckduckgo.com/?q=wasabi+bacon&t=canonical&ia=recipes).
 
 ## Differences
-There's some minor API differences in the handling of subscribing to live events. That allow you to catch the internal PUT request that occurs on subscribing to a live event.
+There's some minor API differences in the handling of subscribing to live events. That allow you to catch the internal PUT request that occurs on subscribing to a live event. In addition use .onValue rather than .subscribe.
 
 It is also assumed that `ws` and `bluebird` are ok to be used as your websocket and promise provider. If there's a problem with this let me know and i'll restore that functionality.
 
@@ -24,8 +24,8 @@ client.socket.on("open", function () {
 	client.get("/api/v1/channels/"+channelName).then(function(res) {
 		// Subscribe to a live event
 		client.live('channel:'+res.id+':update').then(function(res) {
-			res.subscribe(function(res){
-				console.log('Channel update',res);
+			res.onValue(function(value){
+				console.log('Channel update',value);
 			})
 		});
 	});
