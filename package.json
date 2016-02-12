@@ -4,7 +4,7 @@
   "description": "BaconJS powered lightweight client for the hapi websocket layer, wsabi.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node node_modules/mocha/bin/mocha test/unit --recursive"
   },
   "author": "ProbablePrime",
   "homepage": "https://github.com/ProbablePrime/wsabi-client-bacon",
