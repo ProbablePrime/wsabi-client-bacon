@@ -1,4 +1,6 @@
-# Wsabi Client Bacon
+# Wsabi Client Bacon 
+[![Build Status](https://travis-ci.org/ProbablePrime/wsabi-client-bacon.svg?branch=master)](https://travis-ci.org/ProbablePrime/wsabi-client-bacon)
+
 An alternative lightweight client for the hapi websocket layer, wsabi. Heavily based uppon [wsabi-client](https://github.com/ExoZoneDev/wsabi-client). But is written in pure JavaScript and uses a different Reactive provider [baconjs](https://github.com/baconjs/bacon.js).
 
 ## Why?
