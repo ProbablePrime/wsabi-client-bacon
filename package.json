@@ -1,6 +1,6 @@
 {
   "name": "wsabi-client-bacon",
-  "version": "0.1.4",
+  "version": "0.2.0",
   "description": "BaconJS powered lightweight client for the hapi websocket layer, wsabi.",
   "main": "index.js",
   "scripts": {
